@@ -11,6 +11,12 @@ Project to test environment.
 
 ## ⚙️ Run Locally
 
+Check the environment
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Kerala-Blockchain-Academy/ced-env-test/main/checker.sh | sh
+```
+
 Clone the project
 
 ```bash
