@@ -6,6 +6,9 @@ import { JsonRpcProvider, ContractFactory } from "ethers";
   const provider = new JsonRpcProvider("http://127.0.0.1:8545");
   const signer = await provider.getSigner();
 
+  const balanceBefore = await provider.getBalance(signer.address);
+  console.log("Balance Before:", balanceBefore);
+
   const CONTRACT_FILE = "contracts/Storage.sol";
 
   const content = readFileSync(CONTRACT_FILE).toString();
@@ -32,8 +35,6 @@ import { JsonRpcProvider, ContractFactory } from "ethers";
   const abi = output.contracts[CONTRACT_FILE].Storage.abi;
   const bytecode = output.contracts[CONTRACT_FILE].Storage.evm.bytecode.object;
 
-  const balanceBefore = await provider.getBalance(signer.address);
-
   const factory = new ContractFactory(abi, bytecode, signer);
   const contract = await factory.deploy();
 
@@ -44,7 +45,5 @@ import { JsonRpcProvider, ContractFactory } from "ethers";
   console.log("Message:", message);
 
   const balanceAfter = await provider.getBalance(signer.address);
-
-  console.log("Balance Before:", balanceBefore);
   console.log("Balance After:", balanceAfter);
 })();
