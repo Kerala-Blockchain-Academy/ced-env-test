@@ -14,7 +14,7 @@ Project to test environment.
 Check the environment
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Kerala-Blockchain-Academy/ced-env-test/main/checker.sh | sh
+curl -fsSL https://raw.githubusercontent.com/Kerala-Blockchain-Academy/ced-env-test/main/checker.sh | bash
 ```
 
 Clone the project
