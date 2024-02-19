@@ -10,7 +10,7 @@ checker() {
 }
 
 checker "code" "-v"
-checker "git" "-v"
+checker "git" "--version"
 checker "node" "-v"
 checker "java" "--version"
 checker "besu" "--version"
