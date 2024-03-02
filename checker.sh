@@ -4,7 +4,7 @@ checker() {
     if ! command -v $1 &> /dev/null; then
         echo -e "\033[91m[❌] Installed $1\033[95m"
     else
-        version=$($1 $2)
+        version=$($1 $2 | head -1)
         echo -e "\033[92m[✅] Installed $1 ($version)\033[0m"
     fi
 }
