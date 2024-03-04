@@ -4,10 +4,11 @@ Project to test environment.
 
 ## 🛠 Built With
 
-[![Node.js](https://img.shields.io/badge/node.js-olivedrab?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/)
-[![solc-js](https://img.shields.io/badge/solc-darkslategray?style=for-the-badge&logo=ethereum&logoColor=white)](https://github.com/ethereum/solc-js)
-[![Ethers](https://img.shields.io/badge/ethers-darkslategray?style=for-the-badge&logo=ethereum&logoColor=white)](https://docs.ethers.org/v6/)
-[![Solidity](https://img.shields.io/badge/solidity-sienna?style=for-the-badge&logo=solidity&logoColor=white)](https://soliditylang.org/)
+[![Node.js Badge](https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=for-the-badge)](https://nodejs.org/en/)
+[![solc Badge](https://img.shields.io/badge/solc-3C3C3D?logo=ethereum&logoColor=fff&style=for-the-badge)](https://github.com/ethereum/solc-js)
+[![Ethers Badge](https://img.shields.io/badge/Ethers-3C3C3D?logo=ethereum&logoColor=fff&style=for-the-badge)](https://docs.ethers.org/v6/)
+[![Hardhat Badge](https://img.shields.io/badge/Hardhat-3C3C3D?logo=ethereum&logoColor=fff&style=for-the-badge)](https://hardhat.org/)
+[![Solidity Badge](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=fff&style=for-the-badge)](https://soliditylang.org/)
 
 ## ⚙️ Run Locally
 
@@ -30,7 +31,11 @@ Install dependencies
 npm install
 ```
 
-Run a blockchain simulation on port **8545**.
+Run a blockchain simulation using Hardhat
+
+```bash
+npm run node
+```
 
 Run the file
 
